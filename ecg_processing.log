@@ -1,0 +1,35 @@
+2025-02-03 17:28:23,383 - INFO - Starting ECG processing for image: download.jpeg
+2025-02-03 17:28:23,384 - INFO - Image loaded - Time taken: 0.00s
+2025-02-03 17:28:23,387 - INFO - Preprocessing completed - Time taken: 0.00s
+2025-02-03 17:28:23,387 - INFO - Point extraction completed - Found 2674 points
+2025-02-03 17:28:23,388 - INFO - Extraction time: 0.00s
+2025-02-03 17:28:23,389 - INFO - Normalization completed - Time taken: 0.00s
+2025-02-03 17:28:23,390 - INFO - Data processing completed - Time taken: 0.00s
+2025-02-03 17:28:23,394 - INFO - Data saved to CSV - Time taken: 0.00s
+2025-02-03 17:28:23,977 - INFO - Plot generated and saved - Time taken: 0.58s
+2025-02-03 17:28:23,984 - INFO - 
+Performance Metrics:
+2025-02-03 17:28:23,986 - INFO - Total Execution Time: 0.60 seconds
+2025-02-03 17:28:23,986 - INFO - CPU Usage: 28.9%
+2025-02-03 17:28:23,986 - INFO - Memory Usage: 39.7 MB
+2025-02-03 19:07:00,175 - INFO - Starting ECG processing for image: download.jpeg
+2025-02-03 19:07:00,176 - INFO - Image loaded - Time taken: 0.00s
+2025-02-03 19:07:00,179 - INFO - Preprocessing completed - Time taken: 0.00s
+2025-02-03 19:07:00,179 - INFO - Point extraction completed - Found 2674 points
+2025-02-03 19:07:00,179 - INFO - Extraction time: 0.00s
+2025-02-03 19:07:00,181 - INFO - Normalization completed - Time taken: 0.00s
+2025-02-03 19:07:00,181 - INFO - Data processing completed - Time taken: 0.00s
+2025-02-03 19:07:00,184 - INFO - Data saved to CSV - Time taken: 0.00s
+2025-02-03 19:07:00,605 - INFO - Plot generated and saved - Time taken: 0.42s
+2025-02-03 19:07:00,606 - INFO - 
+Performance Metrics:
+2025-02-03 19:07:00,606 - INFO - Total Execution Time: 0.43 seconds
+2025-02-03 19:07:00,606 - ERROR - Error processing ECG: 'cpu_usage'
+2025-02-03 19:09:07,917 - INFO - Starting ECG processing for image: download.jpeg
+2025-02-03 19:09:08,351 - INFO - 
+Performance Metrics:
+2025-02-03 19:09:08,352 - INFO - Total Execution Time: 0.43 seconds
+2025-02-03 19:09:08,353 - INFO - CPU Frequency (Start): 1300.0 MHz
+2025-02-03 19:09:08,353 - INFO - CPU Frequency (End): 1300.0 MHz
+2025-02-03 19:09:08,353 - INFO - CPU Frequency (Average): 1300.0 MHz
+2025-02-03 19:09:08,353 - INFO - Memory Usage: 39.2 MB

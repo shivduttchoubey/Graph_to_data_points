@@ -1,0 +1,10 @@
+2025-02-04 17:18:02,414 - INFO - Starting ECG processing for image: \Media\single_line_ecg.jpg
+2025-02-04 17:18:02,418 - ERROR - Error processing ECG: Failed to load image from \Media\single_line_ecg.jpg
+2025-02-04 17:18:32,474 - INFO - Starting ECG processing for image: single_line_ecg.jpg
+2025-02-04 17:18:35,495 - INFO - 
+Performance Metrics:
+2025-02-04 17:18:35,496 - INFO - Total Execution Time: 3.02 seconds
+2025-02-04 17:18:35,497 - INFO - CPU Frequency (Start): 1300.0 MHz
+2025-02-04 17:18:35,498 - INFO - CPU Frequency (End): 1300.0 MHz
+2025-02-04 17:18:35,499 - INFO - CPU Frequency (Average): 1300.0 MHz
+2025-02-04 17:18:35,499 - INFO - Memory Usage: 39.8 MB

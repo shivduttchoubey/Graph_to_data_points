@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Socket Interface</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f0f2f5;
+    }
+    .chat-container {
+      width: 90%;
+      max-width: 600px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      height: 80vh;
+      overflow: hidden;
+    }
+    .chat-messages {
+      flex: 1;
+      padding: 15px;
+      overflow-y: auto;
+      background-color: #e9ecef;
+    }
+    .message {
+      background: #0084ff;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 15px;
+      margin: 5px 0;
+      max-width: 70%;
+    }
+    .bot-message {
+      background: #d3d3d3;
+      color: black;
+      margin-left: auto;
+    }
+    .chat-input {
+      display: flex;
+      padding: 10px;
+      background-color: #ffffff;
+    }
+    .chat-input input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .chat-input button {
+      background-color: #0084ff;
+      color: white;
+      padding: 10px;
+      border: none;
+      margin-left: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <div id="chat-messages" class="chat-messages"></div>
+    <div class="chat-input">
+      <input type="text" id="chat-input-field" placeholder="Type a message...">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script>
+    const chatMessages = document.getElementById('chat-messages');
+
+    // Simulated messages from a script
+    const scriptMessages = [
+      "Hello! How can I help you today?",
+      "What are your goals for this conversation?",
+      "Let me know if you need anything specific.",
+      "Thanks for chatting! Have a great day!"
+    ];
+
+    let scriptIndex = 0;
+
+    function sendMessage() {
+      const inputField = document.getElementById('chat-input-field');
+      const userMessage = inputField.value.trim();
+      if (userMessage) {
+        displayMessage(userMessage, false);
+        inputField.value = '';
+        setTimeout(() => simulateBotResponse(), 1000);
+      }
+    }
+
+    function simulateBotResponse() {
+      if (scriptIndex < scriptMessages.length) {
+        displayMessage(scriptMessages[scriptIndex], true);
+        scriptIndex++;
+      }
+    }
+
+    function displayMessage(text, isBot) {
+      const messageDiv = document.createElement('div');
+      messageDiv.classList.add('message');
+      if (isBot) {
+        messageDiv.classList.add('bot-message');
+      }
+      messageDiv.textContent = text;
+      chatMessages.appendChild(messageDiv);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+  </script>
+</body>
+</html>
