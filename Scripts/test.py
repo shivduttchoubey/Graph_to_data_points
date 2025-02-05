@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Load image
-image_path = "three_line_ecg.jpeg"  # Update this path
+image_path = "Media\single_line_wide_ecg.jpg"  # Update this path
 img = cv2.imread(image_path)
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
